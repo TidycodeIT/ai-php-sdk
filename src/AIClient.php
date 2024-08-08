@@ -48,6 +48,7 @@ class AIClient implements AIClientContract
      */
     public function post(string $endpoint, array $data = []): object
     {
+        $this->curl->setHeader('Content-Type', 'application/json');
         $this->curl->post($this->baseUrl . $endpoint, $data);
         return $this->handleResponse();
     }
