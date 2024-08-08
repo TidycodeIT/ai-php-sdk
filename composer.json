@@ -1,0 +1,26 @@
+{
+    "name": "tidycode/ai-php-sdk",
+    "description": "Tidycode AI PHP SDK is a PHP API client that allows you to integrate artificial intelligence services deployed by Tidycode.",
+    "type": "library",
+    "version": "1.0.0",
+    "require": {
+        "php-curl-class/php-curl-class": "^9.19"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Tidycode\\AIClient\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Samuele Martini",
+            "email": "samuele@tidycode.it"
+        },
+        {
+            "name": "Tidycode Srl",
+            "email": "info@tidycode.it"
+        }
+    ],
+    "minimum-stability": "stable"
+}
