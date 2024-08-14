@@ -60,7 +60,7 @@ class AIClient implements AIClientContract
     protected function handleResponse(): object
     {
         if ($this->curl->error) {
-            throw new Exception('Error: ' . $this->curl->errorCode . ': ' . $this->curl->errorMessage);
+            throw new Exception('Error: ' . $this->curl->errorCode . ': ' . $this->curl->rawResponse);
         }
 
         return $this->curl->response;
