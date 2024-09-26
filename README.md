@@ -187,6 +187,9 @@ It returns calories and recommended macronutrient doses, based on patient data.
     "physical_activity": "active", // (sedentary/low_active/active/very_active/pro)
     "target": "maintenance", // (aggressive_cut/moderate_cut/maintenance/moderate_bulk/aggressive_bulk)
     "formula": "Cunningham", // (Harris-Benedict/Mifflin-St. Jeor/Cunningham/Katch-McArdle)
+    "protein_percentage": "30", // % of calories
+    "fat_percentage": "25", // % of calories
+    "carbohydrate_percentage": "45" // % of calories
 }
 ```
 
@@ -476,6 +479,9 @@ Restituisce il numero di calorie e le dosi raccomandate di macronutrienti, basan
     "physical_activity": "active", // (sedentary/low_active/active/very_active/pro)
     "target": "maintenance", // (aggressive_cut/moderate_cut/maintenance/moderate_bulk/aggressive_bulk)
     "formula": "Cunningham", // (Harris-Benedict/Mifflin-St. Jeor/Cunningham/Katch-McArdle)
+    "protein_percentage": "30", // % delle calorie
+    "fat_percentage": "25", // % delle calorie
+    "carbohydrate_percentage": "45" // % delle calorie
 }
 ```
 
