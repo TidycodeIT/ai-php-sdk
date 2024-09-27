@@ -34,23 +34,23 @@ class NutritionAssistant implements NutritionAssistantContract
 
     /**
      * @param array $data
-     * @return void
+     * @return object
      * @throws Exception
      */
-    public function getFoodList(array $data): void
+    public function getFoodList(array $data): object
     {
         $endpoint = self::FOOD_LIST_ENDPOINT;
-        $this->aiClient->post($endpoint, $data);
+        return $this->aiClient->post($endpoint, $data);
     }
 
     /**
      * @param array $data
-     * @return void
+     * @return object
      * @throws Exception
      */
-    public function getRecipes(array $data): void
+    public function getRecipes(array $data): object
     {
         $endpoint = self::RECIPES_ENDPOINT;
-        $this->aiClient->post($endpoint, $data);
+        return $this->aiClient->post($endpoint, $data);
     }
 }

@@ -20,15 +20,15 @@ interface NutritionAssistantContract
 
     /**
      * @param array $data
-     * @return void
+     * @return object
      * @throws Exception
      */
-    public function getFoodList(array $data): void;
+    public function getFoodList(array $data): object;
 
     /**
      * @param array $data
-     * @return void
+     * @return object
      * @throws Exception
      */
-    public function getRecipes(array $data): void;
+    public function getRecipes(array $data): object;
 }
