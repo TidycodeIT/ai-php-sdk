@@ -10,6 +10,7 @@ interface NutritionAssistantContract
     const MACRO_ENDPOINT = '/macro';
     const FOOD_LIST_ENDPOINT = '/food_list';
     const RECIPES_ENDPOINT = '/recipes';
+    const FOOD_CATEGORIES_ENDPOINT = '/food_categories';
 
     /**
      * @param array $data
@@ -31,4 +32,10 @@ interface NutritionAssistantContract
      * @throws Exception
      */
     public function getRecipes(array $data): object;
+
+    /**
+     * @return object
+     * @throws Exception
+     */
+    public function getFoodCategories(): object;
 }

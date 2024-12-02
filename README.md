@@ -266,6 +266,11 @@ Use the given food list to suggest preparations and recipes, trying to respect f
 }
 ```
 
+#### 4. `getFoodCategories`.
+
+This API is used to get the list of food categories returned, which is useful, for example, for the mask of excluding certain dishes based on the patient's taste.
+It returns an object that can be converted to json with a simple list
+
 **Example usage**:
 
 ```php
@@ -557,6 +562,10 @@ Utilizza l'elenco degli alimenti fornito per suggerire preparazioni e ricette, c
     "dietary_preferences": "vegano"
 }
 ```
+#### 4. `getFoodCategories`.
+
+Questa API serve per farsi ritornare la lista delle categorie di alimenti, utile ad esempio per la maschera di esclusione di alcune pietanze in base ai gusti del paziente.
+Ritorno un oggetto che può essere convertito in json con un semplice elenco
 
 **Esempio di utilizzo**:
 

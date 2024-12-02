@@ -53,4 +53,14 @@ class NutritionAssistant implements NutritionAssistantContract
         $endpoint = self::RECIPES_ENDPOINT;
         return $this->aiClient->post($endpoint, $data);
     }
+
+    /**
+     * @return object
+     * @throws Exception
+     */
+    public function getFoodCategories(): object
+    {
+        $endpoint = self::FOOD_CATEGORIES_ENDPOINT;
+        return $this->aiClient->get($endpoint);
+    }
 }
